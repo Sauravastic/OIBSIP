@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive To-Do Web App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="section">
+    <div class="container">
+      <h1 class="title">To-Do Web App</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="task-list">
+            <h2>Pending Tasks</h2>
+            <ul id="pending-tasks" class="task-list-items">
+              
+              <!-- Add more tasks similarly -->
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="task-list">
+            <h2>Completed Tasks</h2>
+            <ul id="completed-tasks" class="task-list-items">
+              
+              <!-- Add more completed tasks similarly -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="task-list">
+        <h2>Add New Task</h2>
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input type="text" id="task" class="input" placeholder="Enter your task">
+          </div>
+          <div class="control">
+            <a class="button is-primary" onclick="addTask()">
+              <i class="fas fa-plus"></i> Add Task
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="custom.js"></script>
+
+</body>
+</html>

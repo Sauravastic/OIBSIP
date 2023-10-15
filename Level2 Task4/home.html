@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Authentication System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <!-- register page -->
+    <div class="container" id="registration-container">
+      <h2 class="title">Create an Account</h2>
+      <div class="input-container">
+        <input type="text" id="regUsername" placeholder="Username">
+      </div>
+      <div class="input-container">
+        <input type="password" id="regPassword" placeholder="Password">
+      </div>
+      <div class="button-container">
+        <button onclick="registerUser()">Register</button>
+      </div>
+      <a class="switch-link" href="#" onclick="toggleForm('login')">Already have an account? Login here</a>
+    </div>
+   <!-- login page -->
+    <div class="container" id="login-container" style="display: none;">
+      <h2 class="title">Login to Your Account</h2>
+      <div class="input-container">
+        <input type="text" id="loginUsername" placeholder="Username">
+      </div>
+      <div class="input-container">
+        <input type="password" id="loginPassword" placeholder="Password">
+      </div>
+      <div class="button-container">
+        <button onclick="authenticateUser()">Login</button>
+      </div>
+      <a class="switch-link" href="#" onclick="toggleForm('registration')">Don't have an account? Register here</a>
+    </div>
+   <!-- protected page -->
+    <div class="protected-page">
+      <h2 class="title">Welcome to the Protected Page</h2>
+      <p>This is a protected page that only authenticated users can access.</p>
+      <button class="protected-button" onclick="logout()">Logout</button>
+    </div>
+    <script src="custom.js"></script>
+</body>
+</html>
